@@ -25,9 +25,7 @@ class UserTypesSeeder extends Seeder
         ];
 
         for ($i=0; $i < count($userTypes); $i++) { 
-            $userType = new UserTypes();
-            $userType->name = $userTypes[$i];
-            $userType->save();
+            UserTypes::create(['name' => $userTypes[$i]]);
         }
     }
 }

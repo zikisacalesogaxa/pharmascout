@@ -51,21 +51,23 @@ class JetstreamServiceProvider extends ServiceProvider
     {
         Jetstream::defaultApiTokenPermissions(['read']);
 
-        Jetstream::role('Super Admin', 'Super Administrator', [
+        Jetstream::role('System User', 'System User', [
             'read',
             'create',
             'update',
             'delete',
-        ])->description('Absolute permissions.');
+        ]);
 
-        Jetstream::role('Group Admin', 'Group Administrator', [
+        Jetstream::role('Generic Acc', 'Generic Account', [
             'read',
             'create',
             'update',
-        ])->description('Permissions to make changes on a group level.');
+        ]);
 
-        Jetstream::role('User', 'User', ['read'])->description('Can only view.');
+        Jetstream::role('Lead', 'Lead', ['read']);
 
-        Jetstream::role('None', 'None', [])->description('No permissions.');
+        Jetstream::role('Insraller', 'Installer', []);
+    
+        Jetstream::role('Sales', 'Sales', []);
     }
 }
