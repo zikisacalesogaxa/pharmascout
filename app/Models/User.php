@@ -62,8 +62,8 @@ class User extends Authenticatable
         'profile_photo_url',
     ];
 
-    public function roles()
-    {
-        return $this->belongsTo(related:Role::class);
-    }
+    // public function roles()
+    // {
+    //     return $this->belongsTo(related:Role::class);
+    // }
 }

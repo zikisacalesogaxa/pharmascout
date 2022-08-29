@@ -5,9 +5,6 @@ import JetButton from '@/Components/Button.vue';
 <template>
     <div>
         <div class="p-6 sm:px-20 bg-white border-b border-gray-200">
-            <h1>Admin User</h1>
-            <hr>
-            <br>
             <JetButton class="ml-4">
                 View
             </JetButton>
