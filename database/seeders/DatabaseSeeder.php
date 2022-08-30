@@ -42,7 +42,7 @@ class DatabaseSeeder extends Seeder
             'email' => 'hello@scout.tech',
             'current_team_id' => 1,
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
-        ])->assignRole(['System User']);
+        ])->assignRole(['Super Admin']);
 
         User::create([
             'name' => 'Test',
@@ -51,6 +51,6 @@ class DatabaseSeeder extends Seeder
             'email' => 'test@scout.tech',
             'current_team_id' => 2,
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
-        ])->assignRole(['Generic Acc']);
+        ])->assignRole(['User']);
     }
 }

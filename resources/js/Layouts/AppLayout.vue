@@ -54,7 +54,7 @@ const logout = () => {
                                     Dashboard
                                 </JetNavLink>
 
-                                <JetNavLink v-if="!filter(roles)" :href="route('scouts')" :active="route().current('scouts')">
+                                <JetNavLink :href="route('scouts')" :active="route().current('scouts')">
                                     Scouts
                                 </JetNavLink>
                             </div>

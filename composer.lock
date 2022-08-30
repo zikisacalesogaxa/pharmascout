@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5c9701f97de834131851bbe31bee8755",
+    "content-hash": "5ed432c67f01565e755524f49fc03b2b",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -535,6 +535,68 @@
             "time": "2022-06-18T20:57:19+00:00"
         },
         {
+            "name": "firebase/php-jwt",
+            "version": "v6.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/firebase/php-jwt.git",
+                "reference": "018dfc4e1da92ad8a1b90adc4893f476a3b41cb8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/018dfc4e1da92ad8a1b90adc4893f476a3b41cb8",
+                "reference": "018dfc4e1da92ad8a1b90adc4893f476a3b41cb8",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1||^8.0"
+            },
+            "require-dev": {
+                "guzzlehttp/guzzle": "^6.5||^7.4",
+                "phpspec/prophecy-phpunit": "^1.1",
+                "phpunit/phpunit": "^7.5||^9.5",
+                "psr/cache": "^1.0||^2.0",
+                "psr/http-client": "^1.0",
+                "psr/http-factory": "^1.0"
+            },
+            "suggest": {
+                "paragonie/sodium_compat": "Support EdDSA (Ed25519) signatures when libsodium is not present"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Firebase\\JWT\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Neuman Vong",
+                    "email": "neuman+pear@twilio.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Anant Narayanan",
+                    "email": "anant@php.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple library to encode and decode JSON Web Tokens (JWT) in PHP. Should conform to the current spec.",
+            "homepage": "https://github.com/firebase/php-jwt",
+            "keywords": [
+                "jwt",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/firebase/php-jwt/issues",
+                "source": "https://github.com/firebase/php-jwt/tree/v6.3.0"
+            },
+            "time": "2022-07-15T16:48:45+00:00"
+        },
+        {
             "name": "fruitcake/php-cors",
             "version": "v1.2.0",
             "source": {
@@ -604,6 +666,130 @@
                 }
             ],
             "time": "2022-02-20T15:07:15+00:00"
+        },
+        {
+            "name": "ge-tracker/influxdb-laravel",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ge-tracker/influxdb-laravel.git",
+                "reference": "b22e7e63a8406471f8dc490fb9d0efc0da69d0b2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ge-tracker/influxdb-laravel/zipball/b22e7e63a8406471f8dc490fb9d0efc0da69d0b2",
+                "reference": "b22e7e63a8406471f8dc490fb9d0efc0da69d0b2",
+                "shasum": ""
+            },
+            "require": {
+                "graham-campbell/manager": "^4.6",
+                "illuminate/contracts": "^8.0|^9.0",
+                "illuminate/support": "^8.0|^9.0",
+                "influxdata/influxdb-client-php": "^2.6",
+                "php": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.13"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "GeTracker\\InfluxDBLaravel\\InfluxDBLaravelServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GeTracker\\InfluxDBLaravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Austen",
+                    "email": "james@ge-tracker.com"
+                }
+            ],
+            "description": "Provide InfluxDB connections to Laravel",
+            "support": {
+                "issues": "https://github.com/ge-tracker/influxdb-laravel/issues",
+                "source": "https://github.com/ge-tracker/influxdb-laravel/tree/v2.1.0"
+            },
+            "time": "2022-03-25T12:30:37+00:00"
+        },
+        {
+            "name": "graham-campbell/manager",
+            "version": "v4.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GrahamCampbell/Laravel-Manager.git",
+                "reference": "b4cafa6491b9c92ecf7ce17521580050a27b8308"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GrahamCampbell/Laravel-Manager/zipball/b4cafa6491b9c92ecf7ce17521580050a27b8308",
+                "reference": "b4cafa6491b9c92ecf7ce17521580050a27b8308",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^5.5 || ^6.0 || ^7.0 || ^8.0 || ^9.0",
+                "illuminate/support": "^5.5 || ^6.0 || ^7.0 || ^8.0 || ^9.0",
+                "php": "^7.1.3 || ^8.0"
+            },
+            "require-dev": {
+                "graham-campbell/analyzer": "^2.4 || ^3.0",
+                "graham-campbell/testbench-core": "^3.4",
+                "mockery/mockery": "^1.3.1",
+                "phpunit/phpunit": "^6.5.14 || ^7.5.20 || ^8.5.8 || ^9.3.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "GrahamCampbell\\Manager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Graham Campbell",
+                    "email": "hello@gjcampbell.co.uk",
+                    "homepage": "https://github.com/GrahamCampbell"
+                }
+            ],
+            "description": "Manager Provides Some Manager Functionality For Laravel",
+            "keywords": [
+                "Graham Campbell",
+                "GrahamCampbell",
+                "Laravel Manager",
+                "Laravel-Manager",
+                "connector",
+                "framework",
+                "interface",
+                "laravel",
+                "manager"
+            ],
+            "support": {
+                "issues": "https://github.com/GrahamCampbell/Laravel-Manager/issues",
+                "source": "https://github.com/GrahamCampbell/Laravel-Manager/tree/v4.7.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/graham-campbell/manager",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-01-24T01:59:19+00:00"
         },
         {
             "name": "graham-campbell/result-type",
@@ -1058,6 +1244,53 @@
                 }
             ],
             "time": "2022-06-27T23:21:15+00:00"
+        },
+        {
+            "name": "influxdata/influxdb-client-php",
+            "version": "2.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/influxdata/influxdb-client-php.git",
+                "reference": "518d95efe00976d06ea3f03bff9b506a8ecf8351"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/influxdata/influxdb-client-php/zipball/518d95efe00976d06ea3f03bff9b506a8ecf8351",
+                "reference": "518d95efe00976d06ea3f03bff9b506a8ecf8351",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "guzzlehttp/guzzle": "^7.0.1",
+                "guzzlehttp/psr7": "^2.0.0",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.5.27",
+                "squizlabs/php_codesniffer": "~3.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "InfluxDB2\\": "src/InfluxDB2"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "InfluxDB (v2+) Client Library for PHP",
+            "homepage": "https://www.github.com/influxdata/influxdb-client-php",
+            "keywords": [
+                "influxdb"
+            ],
+            "support": {
+                "issues": "https://github.com/influxdata/influxdb-client-php/issues",
+                "source": "https://github.com/influxdata/influxdb-client-php/tree/2.9.0"
+            },
+            "time": "2022-07-29T17:08:15+00:00"
         },
         {
             "name": "jaybizzle/crawler-detect",
@@ -2034,6 +2267,76 @@
             "time": "2022-04-17T13:12:02+00:00"
         },
         {
+            "name": "league/oauth2-client",
+            "version": "2.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/oauth2-client.git",
+                "reference": "2334c249907190c132364f5dae0287ab8666aa19"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/oauth2-client/zipball/2334c249907190c132364f5dae0287ab8666aa19",
+                "reference": "2334c249907190c132364f5dae0287ab8666aa19",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.0 || ^7.0",
+                "paragonie/random_compat": "^1 || ^2 || ^9.99",
+                "php": "^5.6 || ^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.3.5",
+                "php-parallel-lint/php-parallel-lint": "^1.3.1",
+                "phpunit/phpunit": "^5.7 || ^6.0 || ^9.5",
+                "squizlabs/php_codesniffer": "^2.3 || ^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\OAuth2\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Bilbie",
+                    "email": "hello@alexbilbie.com",
+                    "homepage": "http://www.alexbilbie.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Woody Gilk",
+                    "homepage": "https://github.com/shadowhand",
+                    "role": "Contributor"
+                }
+            ],
+            "description": "OAuth 2.0 Client Library",
+            "keywords": [
+                "Authentication",
+                "SSO",
+                "authorization",
+                "identity",
+                "idp",
+                "oauth",
+                "oauth2",
+                "single sign on"
+            ],
+            "support": {
+                "issues": "https://github.com/thephpleague/oauth2-client/issues",
+                "source": "https://github.com/thephpleague/oauth2-client/tree/2.6.1"
+            },
+            "time": "2021-12-22T16:42:49+00:00"
+        },
+        {
             "name": "mobiledetect/mobiledetectlib",
             "version": "2.8.39",
             "source": {
@@ -2648,6 +2951,56 @@
                 "source": "https://github.com/paragonie/constant_time_encoding"
             },
             "time": "2022-06-14T06:56:20+00:00"
+        },
+        {
+            "name": "paragonie/random_compat",
+            "version": "v9.99.100",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paragonie/random_compat.git",
+                "reference": "996434e5492cb4c3edcb9168db6fbb1359ef965a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/996434e5492cb4c3edcb9168db6fbb1359ef965a",
+                "reference": "996434e5492cb4c3edcb9168db6fbb1359ef965a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 7"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*|5.*",
+                "vimeo/psalm": "^1"
+            },
+            "suggest": {
+                "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paragon Initiative Enterprises",
+                    "email": "security@paragonie.com",
+                    "homepage": "https://paragonie.com"
+                }
+            ],
+            "description": "PHP 5.x polyfill for random_bytes() and random_int() from PHP 7",
+            "keywords": [
+                "csprng",
+                "polyfill",
+                "pseudorandom",
+                "random"
+            ],
+            "support": {
+                "email": "info@paragonie.com",
+                "issues": "https://github.com/paragonie/random_compat/issues",
+                "source": "https://github.com/paragonie/random_compat"
+            },
+            "time": "2020-10-15T08:29:30+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -5890,6 +6243,72 @@
             "time": "2022-03-08T17:03:00+00:00"
         },
         {
+            "name": "webfox/laravel-xero-oauth2",
+            "version": "4.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webfox/laravel-xero-oauth2.git",
+                "reference": "5f2d1046161bfed1b90fdba12ddabd16ec9aaa3a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webfox/laravel-xero-oauth2/zipball/5f2d1046161bfed1b90fdba12ddabd16ec9aaa3a",
+                "reference": "5f2d1046161bfed1b90fdba12ddabd16ec9aaa3a",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^6.0|^7.0|^8.0|^9.0",
+                "php": "^7.3|^8.0|^8.1",
+                "xeroapi/xero-php-oauth2": "^2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.2",
+                "symfony/var-dumper": "^4.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Webfox\\Xero\\XeroServiceProvider"
+                    ],
+                    "aliases": {
+                        "Xero": "Webfox\\Xero\\XeroFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webfox\\Xero\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthew Hailwood",
+                    "email": "matthew@webfox.co.nz",
+                    "homepage": "https://webfox.co.nz",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Laravel integration for Xero using the Oauth 2.0 spec",
+            "homepage": "https://github.com/webfox/laravel-xero-oauth2",
+            "keywords": [
+                "laravel",
+                "laravel-xero-oauth2",
+                "oauth2",
+                "webfox",
+                "xero"
+            ],
+            "support": {
+                "issues": "https://github.com/webfox/laravel-xero-oauth2/issues",
+                "source": "https://github.com/webfox/laravel-xero-oauth2/tree/4.0.2"
+            },
+            "time": "2022-07-12T22:29:32+00:00"
+        },
+        {
             "name": "webmozart/assert",
             "version": "1.11.0",
             "source": {
@@ -5946,6 +6365,66 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.11.0"
             },
             "time": "2022-06-03T18:03:27+00:00"
+        },
+        {
+            "name": "xeroapi/xero-php-oauth2",
+            "version": "2.15.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/XeroAPI/xero-php-oauth2.git",
+                "reference": "e42d8b82929720984bdaff6c9c82cc321ccbd960"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/XeroAPI/xero-php-oauth2/zipball/e42d8b82929720984bdaff6c9c82cc321ccbd960",
+                "reference": "e42d8b82929720984bdaff6c9c82cc321ccbd960",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "firebase/php-jwt": "^5.0 | ^6.0",
+                "guzzlehttp/guzzle": "^6.2 | ^7.0",
+                "league/oauth2-client": "^2.5.0",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "~2.12",
+                "phpunit/phpunit": "^4.8",
+                "squizlabs/php_codesniffer": "~2.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "XeroAPI\\XeroPHP\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Xero API Team",
+                    "homepage": "https://developer.xero.com"
+                }
+            ],
+            "description": "Xero official PHP SDK for oAuth2 generated with OpenAPI spec 3",
+            "homepage": "https://github.com/xeroapi/xero-php-oauth2",
+            "keywords": [
+                "api",
+                "openapispec",
+                "php",
+                "rest",
+                "sdk",
+                "xero"
+            ],
+            "support": {
+                "issues": "https://github.com/XeroAPI/xero-php-oauth2/issues",
+                "source": "https://github.com/XeroAPI/xero-php-oauth2/tree/2.15.0"
+            },
+            "time": "2022-08-05T17:55:16+00:00"
         }
     ],
     "packages-dev": [

@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Spatie\Permission\Models\Role;
 use App\Actions\Jetstream\AddTeamMember;
 use App\Actions\Jetstream\CreateTeam;
 use App\Actions\Jetstream\DeleteTeam;
@@ -49,25 +50,12 @@ class JetstreamServiceProvider extends ServiceProvider
      */
     protected function configurePermissions()
     {
-        Jetstream::defaultApiTokenPermissions(['read']);
+		$roles = Role::all();
 
-        Jetstream::role('System User', 'System User', [
-            'read',
-            'create',
-            'update',
-            'delete',
-        ]);
+		Jetstream::defaultApiTokenPermissions(['read']);
 
-        Jetstream::role('Generic Acc', 'Generic Account', [
-            'read',
-            'create',
-            'update',
-        ]);
-
-        Jetstream::role('Lead', 'Lead', ['read']);
-
-        Jetstream::role('Insraller', 'Installer', []);
-    
-        Jetstream::role('Sales', 'Sales', []);
+		foreach ($roles as $role) {
+			Jetstream::role($role->id, $role->name, []);
+		}
     }
 }
