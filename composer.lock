@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5f6e400966c45c193fffeda84dd9eb69",
+    "content-hash": "fd5cc2ca441a691549ebb76ea1219544",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -2815,12 +2815,6 @@
                 "url": "https://github.com/notscottsmith/dear-api.git",
                 "reference": "6fd795768fda5506c387405dbf94b495573a4ea0"
             },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/notscottsmith/dear-api/zipball/6fd795768fda5506c387405dbf94b495573a4ea0",
-                "reference": "6fd795768fda5506c387405dbf94b495573a4ea0",
-                "shasum": ""
-            },
             "require": {
                 "ext-json": "*",
                 "guzzlehttp/guzzle": "^7.4",
@@ -2855,9 +2849,6 @@
                 }
             ],
             "description": "PHP Library for dear systems API v2 https://dearinventory.docs.apiary.io",
-            "support": {
-                "source": "https://github.com/notscottsmith/dear-api/tree/v1.0.3"
-            },
             "time": "2022-04-08T02:16:04+00:00"
         },
         {
