@@ -28,9 +28,7 @@ class EntityTypesSeeder extends Seeder
         ];
 
         for ($i=0; $i < count($entityTypes); $i++) { 
-            $entity = new EntityTypes();
-            $entity->name = $entityTypes[$i];
-            $entity->save();
+            EntityTypes::create(['name' => $entityTypes[$i]]);
         }
     }
 }

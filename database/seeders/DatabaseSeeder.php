@@ -31,8 +31,8 @@ class DatabaseSeeder extends Seeder
             'personal_team' => true
         ]);
     
+        $this->call(PermissionsSeeder::class);
         $this->call(RolesSeeder::class);
-        $this->call(UserTypesSeeder::class);
         $this->call(EntityTypesSeeder::class);
 
         User::create([

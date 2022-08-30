@@ -22,7 +22,6 @@ return new class extends Migration
             $table->string('apikey_read')->nullable();
             $table->timestamp('lastlogin')->nullable();
             $table->string('last_entity')->nullable();
-            $table->foreignId('user_type_id')->default(2);
             $table->string('gravatar')->nullable();
             $table->string('full_frontal')->nullable();
             $table->string('name');
@@ -39,7 +38,7 @@ return new class extends Migration
             $table->string('status_email')->nullable();
             $table->smallInteger('auth_calib')->default(0);
             $table->string('cognito_id')->nullable();
-            $table->foreignId('current_team_id')->nullable();
+            $table->foreignId('current_team_id')->unique();
             $table->string('profile_photo_path', 2048)->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->timestamps();

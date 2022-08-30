@@ -66,6 +66,12 @@
             "pestphp/pest-plugin": true
         }
     },
+    "repositories":[
+        {
+            "type": "vcs",
+            "url": "git@github.com:notscottsmith/dear-api.git"
+        }
+    ],
     "minimum-stability": "dev",
     "prefer-stable": true
 }

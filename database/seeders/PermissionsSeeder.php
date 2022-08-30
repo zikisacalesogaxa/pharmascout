@@ -17,11 +17,9 @@ class PermissionsSeeder extends Seeder
     {
         //
         $permissions = [
-            'Super Administrator',
-            'Group Administrator',
-            'Administrator',
-            'User',
-            'None'
+            'create, read, update, delete',
+            'create, read, update',
+            'read'
         ];
 
         for ($i=0; $i < count($permissions); $i++) { 
