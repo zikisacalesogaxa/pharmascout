@@ -11,13 +11,8 @@ import JetResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
 
 defineProps({
     title: String,
-    availableRoles: Array,
-    userPermissions: Object,
+    roles: Array
 });
-
-const displayableRole = (role) => {
-    return props.availableRoles.find(r => r.key === role).name;
-};
 
 const showingNavigationDropdown = ref(false);
 
@@ -59,7 +54,7 @@ const logout = () => {
                                     Dashboard
                                 </JetNavLink>
 
-                                <JetNavLink :href="route('scouts')" :active="route().current('scouts')">
+                                <JetNavLink v-if="!filter(roles)" :href="route('scouts')" :active="route().current('scouts')">
                                     Scouts
                                 </JetNavLink>
                             </div>
