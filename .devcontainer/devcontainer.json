@@ -10,10 +10,13 @@
     "extensions": [
         "bmewburn.vscode-intelephense-client",
         "vue.volar",
-        "bradlc.vscode-tailwindcss",
-        "formulahendry.auto-close-tag",
-        "formulahendry.auto-rename-tag",
-        "visualstudioexptteam.vscodeintelli"
+        "visualstudioexptteam.vscodeintelli",
+        "bradlc.vscode-tailwindcss"
+        // "mikestead.dotenv",
+        // "amiralizadeh9480.laravel-extra-intellisense",
+        // "ryannaddy.laravel-artisan",
+        // "onecentlin.laravel5-snippets",
+        // "onecentlin.laravel-blade"
     ],
     "remoteUser": "sail",
     "postCreateCommand": "chown -R 1000:1000 /var/www/html"

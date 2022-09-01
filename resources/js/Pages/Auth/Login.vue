@@ -1,11 +1,9 @@
 <script setup>
 import { Head, Link, useForm } from '@inertiajs/inertia-vue3';
 import JetAuthenticationCard from '@/Components/AuthenticationCard.vue';
-import JetAuthenticationCardLogo from '@/Components/AuthenticationCardLogo.vue';
 import JetButton from '@/Components/Button.vue';
 import JetInput from '@/Components/Input.vue';
 import JetInputError from '@/Components/InputError.vue';
-import JetCheckbox from '@/Components/Checkbox.vue';
 import JetLabel from '@/Components/Label.vue';
 
 defineProps({
@@ -54,12 +52,12 @@ const submit = () => {
         <br>
         <form @submit.prevent="submit">
             <div>
-                <JetLabel for="email" value="Email" />
                 <JetInput
                     id="email"
                     v-model="form.email"
                     type="email"
                     class="mt-1 block w-full"
+                    placeholder="Email"
                     required
                     autofocus
                 />
@@ -67,12 +65,12 @@ const submit = () => {
             </div>
 
             <div class="mt-4">
-                <JetLabel for="password" value="Password" />
                 <JetInput
                     id="password"
                     v-model="form.password"
                     type="password"
                     class="mt-1 block w-full"
+                    placeholder="Password"
                     required
                     autocomplete="current-password"
                 />
@@ -80,7 +78,7 @@ const submit = () => {
             </div>
 
             <div class="flex items-center justify-end mt-0 flex-col">
-                <JetButton class="mt-4 w-full text-center bg-blue-500 capitalize flex justify-center" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
+                <JetButton class="mt-4 w-full text-center bg-blue-500 hover:bg-blue-600 capitalize flex justify-center" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
                     Login
                 </JetButton>
                 <br>
@@ -89,7 +87,7 @@ const submit = () => {
                 </Link>
                 <p class="text-sm text-gray-500">Do not have Access?</p>
                 <br>
-                <JetButton class="w-full capitalize flex justify-center">
+                <JetButton class="w-full capitalize flex justify-center bg-slate-50 text-black shadow-md hover:bg-slate-50">
                     Request Access
                 </JetButton>
             </div>
