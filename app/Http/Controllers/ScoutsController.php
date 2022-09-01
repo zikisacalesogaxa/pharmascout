@@ -18,8 +18,6 @@ class ScoutsController extends Controller
 		if (User::where('email', $user->email)->first()->hasRole('User')) {
 			return Redirect::route('dashboard');
 		}
-		
-		$dear = Dear::create("7379e455-bd46-412b-8583-bbd7f179c503", "d8b7284a-6708-975f-9830-3c4fefba6221");
 
 		return Inertia::render('Scouts/Scouts', [ 'roles' => $roles ]);
 	}

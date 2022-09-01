@@ -34,14 +34,24 @@ const submit = () => {
     <Head title="Log in" />
 
     <JetAuthenticationCard>
-        <template #logo>
-            <JetAuthenticationCardLogo />
-        </template>
+        <div class="m-auto flex justify-center">
+            <img src="../../../images/pharmascoutlogo500.png" width="300" alt="Pharmascout Logo">
+        </div>
+        <br>
+        <div>
+            <p class="text-center text-gray-600 text-sm">
+                <strong class="uppercase">A Brand of Scout Technologies</strong>
+                <br><br>
+                This portal is intented for all our customers to enable them to manage all processes around their compliance
+                <br><br>
+                Login in with your username or email address
+            </p>
+        </div>
 
         <div v-if="status" class="mb-4 font-medium text-sm text-green-600">
             {{ status }}
         </div>
-
+        <br>
         <form @submit.prevent="submit">
             <div>
                 <JetLabel for="email" value="Email" />
@@ -69,26 +79,24 @@ const submit = () => {
                 <JetInputError class="mt-2" :message="form.errors.password" />
             </div>
 
-            <div class="block mt-4">
-                <label class="flex items-center">
-                    <JetCheckbox v-model:checked="form.remember" name="remember" />
-                    <span class="ml-2 text-sm text-gray-600">Remember me</span>
-                </label>
-            </div>
-
-            <div class="flex items-center justify-end mt-4">
-                <Link v-if="canResetPassword" :href="route('password.request')" class="underline text-sm text-gray-600 hover:text-gray-900">
+            <div class="flex items-center justify-end mt-0 flex-col">
+                <JetButton class="mt-4 w-full text-center bg-blue-500 capitalize flex justify-center" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
+                    Login
+                </JetButton>
+                <br>
+                <Link v-if="canResetPassword" :href="route('password.request')" class="text-sm text-blue-600 hover:text-gray-900">
                     Forgot your password?
                 </Link>
-
-                <Link v-if="canRegister" :href="route('register')" class="ml-4 underline text-sm text-gray-600 hover:text-gray-900">
-                    Register
-                </Link>
-
-                <JetButton class="ml-4" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
-                    Log in
+                <p class="text-sm text-gray-500">Do not have Access?</p>
+                <br>
+                <JetButton class="w-full capitalize flex justify-center">
+                    Request Access
                 </JetButton>
             </div>
         </form>
+        <br>
+        <p class="text-sm text-gray-600 text-center">
+            Scout Technologies © 2022
+        </p>
     </JetAuthenticationCard>
 </template>

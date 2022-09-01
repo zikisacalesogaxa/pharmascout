@@ -49,6 +49,11 @@ const logout = () => {
 						:active="route().current('scouts')">
 						Scouts
 					</JetNavLink>
+
+					<JetNavLink v-if="$page.props.user.user_type_id != 3" :href="route('sales')"
+						:active="route().current('sales')">
+						Sales
+					</JetNavLink>
 				</div>
 
 			</div>

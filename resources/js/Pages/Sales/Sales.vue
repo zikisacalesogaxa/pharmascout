@@ -1,14 +1,14 @@
 <script setup>
 import AppLayout from '@/Layouts/AppLayout.vue';
 </script>
-	
+		
 <template>
-	<AppLayout title="Scouts">
+	<AppLayout title="Sales">
 		<template #header>
 			<h2 class="font-semibold text-xl text-gray-800 leading-tight">
-				Scouts
+				Sales
 			</h2>
 		</template>
 	</AppLayout>
 </template>
-	
+		
