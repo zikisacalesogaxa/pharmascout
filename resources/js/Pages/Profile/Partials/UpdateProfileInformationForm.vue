@@ -179,7 +179,7 @@ const clearPhotoFileInput = () => {
                 Saved.
             </JetActionMessage>
 
-            <JetButton :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
+            <JetButton class="text-white" :class="{ 'opacity-25': form.processing}" :disabled="form.processing">
                 Save
             </JetButton>
         </template>

@@ -113,7 +113,7 @@ const closeModal = () => {
             </div>
 
             <div class="flex items-center mt-5">
-                <JetButton @click="confirmLogout">
+                <JetButton class="text-white" @click="confirmLogout">
                     Log Out Other Browser Sessions
                 </JetButton>
 
@@ -151,7 +151,7 @@ const closeModal = () => {
                     </JetSecondaryButton>
 
                     <JetButton
-                        class="ml-3"
+                        class="ml-3 text-white"
                         :class="{ 'opacity-25': form.processing }"
                         :disabled="form.processing"
                         @click="logoutOtherBrowserSessions"

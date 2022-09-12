@@ -19,7 +19,7 @@ createInertiaApp({
         const vuetify = createVuetify({
             components,
             directives
-        })
+        });
         return createApp({ render: () => h(app, props) })
             .mixin({
                 methods: {

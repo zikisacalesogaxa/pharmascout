@@ -10,12 +10,17 @@ const links = [
 		route: 'profile.show',
 		title: 'Profile',
 		value: 2,
+	},
+	{
+		route: 'scouts',
+		title: 'Scouts',
+		value: 3,
+	},
+	{
+		route: 'sales',
+		title: 'Sales',
+		value: 4,
 	}
-	// {
-	// 	route: "teams.show, 1",
-	// 	title: 'Team',
-	// 	value: 3,
-	// }
 ];
 const logout = () => {
 	Inertia.post(route('logout'));

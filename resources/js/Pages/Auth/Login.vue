@@ -78,7 +78,7 @@ const submit = () => {
             </div>
 
             <div class="flex items-center justify-end mt-0 flex-col">
-                <JetButton class="mt-4 w-full text-center bg-blue-500 hover:bg-blue-600 capitalize flex justify-center" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
+                <JetButton class="mt-4 w-full text-center bg-blue-500 hover:bg-blue-600 capitalize flex justify-center border-none text-white" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
                     Login
                 </JetButton>
                 <br>
@@ -87,7 +87,7 @@ const submit = () => {
                 </Link>
                 <p class="text-sm text-gray-500">Do not have Access?</p>
                 <br>
-                <JetButton class="w-full capitalize flex justify-center bg-slate-50 text-black shadow-md hover:bg-slate-50">
+                <JetButton class="w-full capitalize flex justify-center bg-slate-50 text-black shadow-md hover:bg-slate-50 border-none">
                     Request Access
                 </JetButton>
             </div>
